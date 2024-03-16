@@ -10,11 +10,12 @@ package com.xzit.practice.designModel;
  */
 public class Singleton0 {
 
-    private static Singleton0 singleton = new Singleton0();
-
     private Singleton0() {
         System.out.println("Singleton0私有无参构造器");
     }
+
+    // 饿汉
+    private static Singleton0 singleton = new Singleton0();
 
     public static Singleton0 getSingletonInstance() {
         return singleton;
