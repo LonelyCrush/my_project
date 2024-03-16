@@ -9,6 +9,7 @@ package com.xzit.demo;
  * @since 2023-12-11 15:10
  */
 public class HelloDemo {
+
     public static void hello() {
         System.out.println("hello");
     }
