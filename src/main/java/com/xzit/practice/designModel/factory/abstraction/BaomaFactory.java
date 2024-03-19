@@ -12,7 +12,7 @@ public class BaomaFactory implements TotalFactory {
 
     @Override
     public Car createCar() {
-        return new Baoma();
+        return new BaomaCar();
     }
 
     @Override

@@ -12,7 +12,7 @@ public class AodiFactory implements TotalFactory {
 
     @Override
     public Car createCar() {
-        return new Aodi();
+        return new AodiCar();
     }
 
     @Override

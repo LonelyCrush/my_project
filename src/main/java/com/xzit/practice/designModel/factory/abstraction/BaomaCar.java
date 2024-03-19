@@ -8,7 +8,7 @@ package com.xzit.practice.designModel.factory.abstraction;
  * @author leizf
  * @since 2024-03-18 22:42
  */
-class Baoma implements Car {
+class BaomaCar implements Car {
 
     @Override
     public void run() {

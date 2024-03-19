@@ -2,7 +2,7 @@ package com.xzit.practice.designModel.factory.abstraction;
 
 /**
  * <p>
- * 该类用于：
+ * 该类用于：抽象工厂
  * </p>
  *
  * @author leizf

@@ -2,7 +2,7 @@ package com.xzit.practice.designModel.factory.simple;
 
 /**
  * <p>
- * 该类用于：
+ * 该类用于：简单工厂
  * </p>
  *
  * @author leizf
