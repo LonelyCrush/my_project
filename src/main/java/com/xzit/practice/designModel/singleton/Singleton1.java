@@ -1,4 +1,4 @@
-package com.xzit.practice.designModel;
+package com.xzit.practice.designModel.singleton;
 
 /**
  * <p>
