@@ -16,8 +16,8 @@ public class Demo {
         UserDao proxy = (UserDao) myInvocationHandler.getProxy();
         proxy.add();
 
-        MyRoleInvocationHandler myRoleInvocationHandler = new MyRoleInvocationHandler(RoleDao.class);
-        RoleDao proxy1 = (RoleDao) myRoleInvocationHandler.getProxy();
+        MyRoleInvocationHandler<RoleDao> myRoleInvocationHandler = new MyRoleInvocationHandler<>(RoleDao.class);
+        RoleDao proxy1 = myRoleInvocationHandler.getProxy();
         proxy1.add();
     }
 }
