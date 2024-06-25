@@ -1,5 +1,6 @@
 package com.xzit;
 
+import com.alibaba.fastjson.JSON;
 import com.xzit.practice.tree.domain.Auth;
 import com.xzit.practice.tree.domain.ProductType;
 import com.xzit.practice.tree.service.AuthService;
@@ -27,8 +28,6 @@ public class AuthTest {
     @Test
     void test0() {
         List<Auth> list = authService.getAuthTree();
-        for (Auth auth : list) {
-            System.out.println(auth);
-        }
+        System.out.println(JSON.toJSONString(list));
     }
 }

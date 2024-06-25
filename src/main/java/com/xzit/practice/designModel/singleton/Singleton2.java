@@ -2,7 +2,7 @@ package com.xzit.practice.designModel.singleton;
 
 /**
  * <p>
- * 该类用于：
+ * 该类用于：静态内部类 单例
  * </p>
  *
  * @author leizf

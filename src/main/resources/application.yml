@@ -3,10 +3,24 @@ spring:
     url: jdbc:mysql://localhost:3306/db_warehouse?serverTimezone=GMT%2B8&useSSL=false
     username: root
     password: 123456
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  web:
+    resources:
+      static-locations: classpath:/upload
+
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.xzit.practice.tree.domain
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+
+store:
+  upload-path: F:\studying\studying_project\my_project\src\main\resources\store\upload
+  file-type-array: .png,.jpg,.jpeg,.txt,.zip,.rar,.pdf,.xml,xls
+  max-file-size: 8192
+
