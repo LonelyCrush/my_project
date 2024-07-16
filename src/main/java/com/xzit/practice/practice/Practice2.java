@@ -12,9 +12,13 @@ public class Practice2 {
 
     public static void main(String[] args) {
         String[] strings = {"JavaGuide", "公众号：JavaGuide", "博客：https://javaguide.cn/"};
+        int i = 0;
 
         for (String string : strings) {
             System.out.println(string);
+            i++;
         }
+
+        System.out.println(i);
     }
 }

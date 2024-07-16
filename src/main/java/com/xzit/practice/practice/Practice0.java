@@ -1,5 +1,7 @@
 package com.xzit.practice.practice;
 
+import java.util.ArrayList;
+
 /**
  * <p>
  * 该类用于：让两个线程交替打印A1B2C3
