@@ -51,7 +51,7 @@ public class ReflectionTravelObject {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class Person implements Cloneable {
+    private static class Person implements Cloneable {
         private String name;
         private Integer age;
         private String address;
