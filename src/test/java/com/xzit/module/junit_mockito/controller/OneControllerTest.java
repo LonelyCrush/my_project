@@ -1,12 +1,8 @@
 package com.xzit.module.junit_mockito.controller;
 
-import com.xzit.module.junit_mockito.controller.OneController;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -22,7 +18,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
-public class TestOneController {
+public class OneControllerTest {
 
     @Resource
     private WebApplicationContext webApplicationContext;

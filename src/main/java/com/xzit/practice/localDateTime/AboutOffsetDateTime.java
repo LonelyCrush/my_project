@@ -1,7 +1,6 @@
-package com.xzit.practice.java8LocalDateTime;
+package com.xzit.practice.localDateTime;
 
 import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 
@@ -14,7 +13,11 @@ public class AboutOffsetDateTime {
 //        testParse();
         testIsSupported();
     }
-
+    /**
+     * @description: dw
+     * @author: leizefeng
+     * @date: 2024/7/22
+     **/
     public static void testIsSupported() {
         OffsetDateTime offsetDateTime = OffsetDateTime.of(2023, 11, 28, 23, 46, 56, 0, ZoneOffset.ofHours(8));
         boolean supported1 = offsetDateTime.isSupported(ChronoField.YEAR);
