@@ -1,8 +1,9 @@
-package com.xzit;
+package com.xzit.other;
 
-import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson.JSON;
+import com.xzit.practice.tree.domain.Auth;
 import com.xzit.practice.tree.domain.ProductType;
-import com.xzit.practice.tree.mapper.ProductTypeMapper;
+import com.xzit.practice.tree.service.AuthService;
 import com.xzit.practice.tree.service.ProductTypeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,21 +13,21 @@ import java.util.List;
 
 /**
  * <p>
- * 该类用于：将链表转为链表树
+ * 该类用于：
  * </p>
  *
  * @author leizf
- * @since 2024-04-23 13:10
+ * @since 2024-04-23 17:11
  */
 @SpringBootTest
-public class ProductTypeMapperTest {
+public class AuthTest {
 
     @Resource
-    private ProductTypeService productTypeService;
+    private AuthService authService;
 
     @Test
     void test0() {
-        List<ProductType> list = productTypeService.getProductTypesTree();
+        List<Auth> list = authService.getAuthTree();
         System.out.println(JSON.toJSONString(list));
     }
 }

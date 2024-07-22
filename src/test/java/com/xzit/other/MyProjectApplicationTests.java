@@ -1,4 +1,4 @@
-package com.xzit;
+package com.xzit.other;
 
 import com.xzit.demo.HelloDemo;
 import org.junit.jupiter.api.Test;
