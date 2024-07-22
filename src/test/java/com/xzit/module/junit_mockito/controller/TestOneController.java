@@ -1,4 +1,4 @@
-package com.xzit.module.junit_mockito.service;
+package com.xzit.module.junit_mockito.controller;
 
 import com.xzit.module.junit_mockito.controller.OneController;
 import org.junit.Test;
