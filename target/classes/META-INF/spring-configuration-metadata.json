@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "store",
+      "type": "com.xzit.module.upload_io.FIleProp",
+      "sourceType": "com.xzit.module.upload_io.FIleProp"
+    }
+  ],
+  "properties": [
+    {
+      "name": "store.file-type-array",
+      "type": "java.lang.String[]",
+      "description": "文件类型",
+      "sourceType": "com.xzit.module.upload_io.FIleProp"
+    },
+    {
+      "name": "store.max-file-size",
+      "type": "java.lang.Integer",
+      "description": "文件大小",
+      "sourceType": "com.xzit.module.upload_io.FIleProp"
+    },
+    {
+      "name": "store.upload-path",
+      "type": "java.lang.String",
+      "description": "上传路径",
+      "sourceType": "com.xzit.module.upload_io.FIleProp"
+    }
+  ],
+  "hints": []
+}
