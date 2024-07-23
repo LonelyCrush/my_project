@@ -1,4 +1,4 @@
-package com.xzit.practice.practice;
+package com.xzit.practice.practice.thread;
 
 /**
  * <p>
