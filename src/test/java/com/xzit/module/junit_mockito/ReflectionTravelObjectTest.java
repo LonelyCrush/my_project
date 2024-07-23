@@ -39,7 +39,6 @@ public class ReflectionTravelObjectTest {
         // 获取外部类方法，即测试方法，并允许操作
         Method handlePersonNullMethod = reflectionTravelObjectClass.getDeclaredMethod("handlePersonNull", innerPersonClass);
         handlePersonNullMethod.setAccessible(true);
-
         // 执行方法
         handlePersonNullMethod.invoke(reflectionTravelObject, person);
         System.out.println(person);
@@ -49,7 +48,6 @@ public class ReflectionTravelObjectTest {
         ageField.setAccessible(true);
         Field addressField = innerPersonClass.getDeclaredField("address");
         addressField.setAccessible(true);
-
         // 断言
         Assertions.assertEquals(0, ageField.get(person));
         Assertions.assertEquals("Unknown", addressField.get(person));
