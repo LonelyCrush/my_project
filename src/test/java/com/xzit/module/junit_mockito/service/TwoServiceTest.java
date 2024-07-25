@@ -1,11 +1,13 @@
 package com.xzit.module.junit_mockito.service;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -18,6 +20,12 @@ public class TwoServiceTest {
 
     @Mock
     private OneService oneService;
+
+//    @RunWith(SpringRunner.class) 可以替代：
+//    @Before
+//    public void before() {
+//        MockitoAnnotations.openMocks(this);
+//    }
 
     @Test
     public void testGetPriceByOneService() {
