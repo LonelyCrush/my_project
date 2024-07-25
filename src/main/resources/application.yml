@@ -24,3 +24,6 @@ store:
   file-type-array: .png,.jpg,.jpeg,.txt,.zip,.rar,.pdf,.xml,xls
   max-file-size: 8192
 
+job:
+  synchronize:
+    cron: 0/5 * * * * ?
