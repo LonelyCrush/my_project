@@ -1,7 +1,7 @@
-package com.xzit.module.desensitization.pojo;
+package com.xzit.module.desensitization_annotation_custom.pojo;
 
-import com.xzit.module.desensitization.annotation.Desensitization;
-import com.xzit.module.desensitization.type.DesensitizationTypeEnum;
+import com.xzit.module.desensitization_annotation_custom.annotation.Desensitization;
+import com.xzit.module.desensitization_annotation_custom.type.DesensitizationTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

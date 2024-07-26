@@ -1,10 +1,11 @@
-package com.xzit.module.desensitization.controller;
+package com.xzit.module.desensitization_annotation_custom.controller;
 
-import com.xzit.module.desensitization.pojo.TestPojo;
+import com.xzit.module.desensitization_annotation_custom.pojo.TestPojo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/hutool")
 public class TestController {
 
     @RequestMapping("/test")

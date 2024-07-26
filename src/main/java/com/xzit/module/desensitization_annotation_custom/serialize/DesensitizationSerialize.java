@@ -1,4 +1,4 @@
-package com.xzit.module.desensitization.serialize;
+package com.xzit.module.desensitization_annotation_custom.serialize;
 
 import cn.hutool.core.text.CharSequenceUtil;
 import cn.hutool.core.util.DesensitizedUtil;
@@ -8,8 +8,8 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.ContextualSerializer;
-import com.xzit.module.desensitization.annotation.Desensitization;
-import com.xzit.module.desensitization.type.DesensitizationTypeEnum;
+import com.xzit.module.desensitization_annotation_custom.annotation.Desensitization;
+import com.xzit.module.desensitization_annotation_custom.type.DesensitizationTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 

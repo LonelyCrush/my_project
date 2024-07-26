@@ -1,9 +1,9 @@
-package com.xzit.module.desensitization.annotation;
+package com.xzit.module.desensitization_annotation_custom.annotation;
 
 import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.xzit.module.desensitization.serialize.DesensitizationSerialize;
-import com.xzit.module.desensitization.type.DesensitizationTypeEnum;
+import com.xzit.module.desensitization_annotation_custom.serialize.DesensitizationSerialize;
+import com.xzit.module.desensitization_annotation_custom.type.DesensitizationTypeEnum;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

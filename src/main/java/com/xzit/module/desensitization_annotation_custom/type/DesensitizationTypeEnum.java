@@ -1,4 +1,4 @@
-package com.xzit.module.desensitization.type;
+package com.xzit.module.desensitization_annotation_custom.type;
 
 /**
  * description: 脱敏策略枚举
