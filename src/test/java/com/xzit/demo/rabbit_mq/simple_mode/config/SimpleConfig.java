@@ -1,5 +1,6 @@
 package com.xzit.demo.rabbit_mq.simple_mode.config;
 
+import com.xzit.demo.rabbit_mq.constant.Constant;
 import com.xzit.demo.rabbit_mq.simple_mode.role.SimpleReceiver;
 import com.xzit.demo.rabbit_mq.simple_mode.role.SimpleSender;
 import org.springframework.amqp.core.Queue;
@@ -11,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 public class SimpleConfig {
 
     @Bean
-    public Queue simpleHelloQueue() {
-        return new Queue("simple_queue");
+    public Queue simpleQueue() {
+        return new Queue(Constant.SIMPLE_QUEUE);
     }
 
     @Bean

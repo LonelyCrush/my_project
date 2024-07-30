@@ -1,15 +1,16 @@
 package com.xzit.demo.rabbit_mq.simple_mode.role;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.xzit.demo.rabbit_mq.constant.Constant;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
+@Slf4j
+@RabbitListener(queues = Constant.SIMPLE_QUEUE)
 public class SimpleReceiver {
-
-    private static final Logger logger = LoggerFactory.getLogger(SimpleReceiver.class);
 
     @RabbitHandler
     public void receive(String message) {
-        logger.info("Receiver <- : " + message);
+        log.info("Receiver <- : {}", message);
     }
 }
