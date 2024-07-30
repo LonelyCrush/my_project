@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE bookshelf SYSTEM "bookdtd.dtd">
+<bookshelf>
+    <book id="NO1" number="10" publishingHouse="冬澜教育" type="IT">
+        <bookName>从零基础学习Java</bookName>
+        <author>大块头</author>
+        <price>19.9</price>
+    </book>
+    <book id="NO2" number="11" publishingHouse="冬澜教育" type="IT">
+        <bookName>MySQL数据库</bookName>
+        <author>小不点</author>
+        <price>20.9</price>
+    </book>
+</bookshelf>

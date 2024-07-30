@@ -1,0 +1,19 @@
+<!ELEMENT bookshelf (book+)>
+        <!ELEMENT book (bookName,author,price)>
+        <!ELEMENT bookName (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ATTLIST book
+                id ID #REQUIRED
+                number CDATA #IMPLIED
+                publishingHouse (清华|北大|冬澜教育) "冬澜教育"
+                type CDATA #FIXED "IT"
+                >
+
+        <!--
+            对book标签中的属性进行约束分析：
+                book标签有一个【id】属性，类型为ID类型所以属性值是唯一的，不能以数字开头
+                book标签中有一个【number】属性，类型为CDATA可行，也就是属性值是字符串，约束可有可无
+                book标签中有一个【publishingHouse】属性，类型为枚举类型，也就是说该属性只能在枚举中选择一个，默认是 冬澜教育
+                book标签中有一个【type】属性，类型为CDATA，也就是字符串，属性约束是固定值，所以该属性只能是"IT"
+        -->
