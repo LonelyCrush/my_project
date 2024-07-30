@@ -1,8 +1,7 @@
 package com.xzit.other;
 
-import com.xzit.demo.HelloDemo;
+import com.xzit.hello.HelloDemo;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.util.StringUtils;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

@@ -10,6 +10,6 @@ public class WorkConfig {
 
     @Bean
     public WorkSender workSender() {
-
+        return new WorkSender();
     }
 }

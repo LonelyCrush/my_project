@@ -1,4 +1,4 @@
-package com.xzit.demo;
+package com.xzit.hello;
 
 /**
  * <p>

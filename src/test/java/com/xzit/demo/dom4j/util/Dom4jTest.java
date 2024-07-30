@@ -5,18 +5,17 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 
 @SpringBootTest
-public class testDom4j {
+@Component
+public class Dom4jTest {
 
     @Test
     public void testParseXml() throws DocumentException {
