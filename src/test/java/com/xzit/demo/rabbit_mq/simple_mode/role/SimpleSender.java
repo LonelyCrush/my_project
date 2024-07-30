@@ -1,22 +1,21 @@
 package com.xzit.demo.rabbit_mq.simple_mode.role;
 
+import com.xzit.demo.rabbit_mq.constant.Constant;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 import javax.annotation.Resource;
 
+@Slf4j
 public class SimpleSender {
-
-    private static final Logger logger = LoggerFactory.getLogger(SimpleSender.class);
 
     @Resource
     private RabbitTemplate rabbitTemplate;
 
-    private static final String QUEUE_NAME = "simple_queue";
-
     public void send(String message) {
-        rabbitTemplate.convertAndSend(QUEUE_NAME, message);
-        logger.info("Sender -> : " + message);
+        rabbitTemplate.convertAndSend(Constant.SIMPLE_QUEUE, message);
+        log.info("Sender -> : " + message);
     }
 }
