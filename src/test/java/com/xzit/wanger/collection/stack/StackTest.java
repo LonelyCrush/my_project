@@ -1,4 +1,4 @@
-package com.xzit.demo.collection.stack;
+package com.xzit.wanger.collection.stack;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
