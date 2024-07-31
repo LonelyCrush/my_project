@@ -40,6 +40,8 @@ public class StackTest {
         System.out.println(stack.peek());
         stack.pop();
         System.out.println(stack);
+        stack.pop();
+        System.out.println(stack.peek());
     }
 
     @Test
@@ -70,10 +72,10 @@ public class StackTest {
         String s1 = "()[]{}";
         String s2 = "(])[{}(";
         String s3 = "([)]";
-        String s4 = "([)]";
+        String s4 = ")[)]";
         String s5 = "([{}])";
-        String s6 = " ";
-        String s7 = "  ";
+        String s6 = "";
+        String s7 = " ";
 
         System.out.println(isValid(s1));
         System.out.println(isValid(s2));
@@ -81,10 +83,11 @@ public class StackTest {
         System.out.println(isValid(s4));
         System.out.println(isValid(s5));
         System.out.println(isValid(s6));
+        System.out.println(isValid(s7));
     }
 
     private boolean isValid(String s) {
-        if (" ".equals(s) || s.length() == 0) {
+        if ("".equals(s.trim()) || s.length() == 0) {
             return true;
         }
 
@@ -96,8 +99,6 @@ public class StackTest {
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
-            } else if (stack.isEmpty()) {
-                return false;
             } else if (map.get(c) == stack.peek()) {
                 stack.pop();
             } else {
@@ -110,11 +111,8 @@ public class StackTest {
     @Test
     public void testString() {
         System.out.println("  ".length());
-        // todo: 对字符串去空
         String s1 = "  Hello World  ";
-        String s2 = "    ";
         System.out.println(s1.trim().length());
-        System.out.println(s2.trim().length());
     }
 
     /**
@@ -176,8 +174,8 @@ public class StackTest {
      */
     @Test
     public void testLeeCode3() {
-//        System.out.println(longestValidParentheses("(()"));
-//        System.out.println(longestValidParentheses(")()())"));
+        System.out.println(longestValidParentheses("(()"));
+        System.out.println(longestValidParentheses(")()())"));
         System.out.println(longestValidParentheses("(()(()))"));
     }
 

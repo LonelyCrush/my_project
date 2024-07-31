@@ -16,8 +16,9 @@ public class DynamicTest {
     @Test
     public void main1() {
         long flag1 = System.currentTimeMillis();
-        System.out.println(recursiveImpl(10));
-        System.out.println(arrayRecursiveImpl(10));
+        int n = 10;
+        System.out.println(recursiveImpl(n));
+        System.out.println(arrayRecursiveImpl(n));
         long flag2 = System.currentTimeMillis();
         System.out.println("spendTime: " + (flag2 - flag1) + " ms");
     }
@@ -63,10 +64,10 @@ public class DynamicTest {
         // 二维数组宽度
         System.out.println(num[0].length);
         // 计算
-        System.out.println(dynamicProgrammingCalculate(num, num.length, num[0].length));
+        System.out.println(dynamicProgrammingCalculate(num, num.length));
     }
 
-    private int dynamicProgrammingCalculate(int[][] num, int height, int width) {
+    private int dynamicProgrammingCalculate(int[][] num, int height) {
         for (int i = height - 2; i >= 0; i--) {
             for (int j = 0; j < i + 1; j++) {
                 num[i][j] += Math.max(num[i + 1][j], num[i + 1][j + 1]);
