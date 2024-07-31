@@ -6,7 +6,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 @Slf4j
-@RabbitListener(queues = Constant.SIMPLE_QUEUE)
+//@RabbitListener(queues = Constant.SIMPLE_QUEUE)
 public class SimpleReceiver {
 
     @RabbitHandler

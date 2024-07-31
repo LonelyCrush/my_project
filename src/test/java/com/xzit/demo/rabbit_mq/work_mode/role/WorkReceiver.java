@@ -8,7 +8,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 @Slf4j
-@RabbitListener(queues = Constant.WORK_QUEUE)
+//@RabbitListener(queues = Constant.WORK_QUEUE)
 public class WorkReceiver {
 
     public final int number;
