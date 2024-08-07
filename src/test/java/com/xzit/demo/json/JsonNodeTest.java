@@ -71,6 +71,8 @@ public class JsonNodeTest {
             }
         }
         String string = objectMapper.writeValueAsString(jsonNode);
+        // 这时候已经变成了可修改的ObjectNode，已经强转了
+        System.out.println(jsonNode.getClass());
         System.out.println(string);
     }
 
