@@ -5,8 +5,8 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author leizefeng
@@ -24,5 +24,8 @@ public class Hello {
 
         List<Object> list2 = null;
         System.out.println(CollectionUtils.isEmpty(list2));
+
+        System.out.println(Objects.requireNonNull(list1));
+        Objects.requireNonNull(list2);
     }
 }

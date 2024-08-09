@@ -15,6 +15,9 @@ import static java.lang.Math.max;
 @SpringBootTest
 public class StackTest {
 
+    /**
+     * 栈结构
+     */
     @Test
     public void testStack() {
         Stack<String> stringStack = new Stack<>();
@@ -29,6 +32,9 @@ public class StackTest {
         // 当需要使用栈时，Java 已不推荐使用Stack，而是推荐使用更高效的stack（双端队列）
     }
 
+    /**
+     * ArrayDeque双端队列代替栈
+     */
     @Test
     public void testArrayDequeStack() {
         ArrayDeque<String> stack = new ArrayDeque<>();
@@ -44,6 +50,9 @@ public class StackTest {
         System.out.println(stack.peek());
     }
 
+    /**
+     * ArrayDeque双端队列作为队列
+     */
     @Test
     public void testArrayDequeQueue() {
         ArrayDeque<String> queue = new ArrayDeque<>();
@@ -211,5 +220,22 @@ public class StackTest {
             maxLength = max(maxLength, dp[i]);
         }
         return maxLength;
+    }
+
+    /**
+     * 字符串反转
+     */
+    @Test
+    public void reverseString() {
+        String str = "1234567";
+        char[] chars = str.toCharArray();
+        ArrayDeque<Character> stack = new ArrayDeque<>();
+        for (char c : chars) {
+            stack.push(c);
+        }
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = stack.pop();
+        }
+        System.out.println(new String(chars));
     }
 }
