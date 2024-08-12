@@ -1,8 +1,6 @@
 package com.xzit.wanger.util;
 
-import cn.hutool.Hutool;
 import cn.hutool.core.convert.Convert;
-import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Validator;
 import cn.hutool.core.util.ReflectUtil;
@@ -12,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 
 /**
@@ -44,6 +43,12 @@ public class HutoolTest {
         System.out.println(Convert.toLocalDateTime(dateStr2).toLocalDate());
         System.out.println(Convert.toLocalDateTime(dateStr3).toLocalDate());
         System.out.println(Convert.toLocalDateTime(dateStr4).toLocalDate());
+    }
+
+    @Test
+    public void testToString() {
+        // to String
+        System.out.println(DateUtil.format(LocalDateTime.now(), "yyyy-MM-dd HH:mm:ss"));
     }
 
     @Test
