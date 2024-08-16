@@ -5,6 +5,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -13,7 +14,7 @@ import java.util.Objects;
  */
 public class Hello {
 
-    public static void main(String[] args) {
+    public void doSomething() {
         String[] strings = {null, "Hello", ""};
         for (String string : strings) {
             System.out.println(StringUtils.hasText(string));
@@ -27,5 +28,8 @@ public class Hello {
 
         System.out.println(Objects.requireNonNull(list1));
         Objects.requireNonNull(list2);
+    }
+
+    public static void main(String[] args) {
     }
 }

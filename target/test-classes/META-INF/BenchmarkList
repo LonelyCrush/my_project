@@ -1,0 +1,2 @@
+JMH S 27 com.xzit.wanger.jmh.JmhTest S 70 com.xzit.wanger.jmh.jmh_generated.JmhTest_testScannerArrayList_jmhTest S 20 testScannerArrayList S 10 Throughput E A 1 1 1 E I 1 1 E E I 1 2 E E I 1 2 E E E E E E U 12 MILLISECONDS E E 
+JMH S 27 com.xzit.wanger.jmh.JmhTest S 71 com.xzit.wanger.jmh.jmh_generated.JmhTest_testScannerLinkedList_jmhTest S 21 testScannerLinkedList S 10 Throughput E A 1 1 1 E I 1 1 E E I 1 2 E E I 1 2 E E E E E E U 12 MILLISECONDS E E 
