@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -33,4 +34,6 @@ public class Student {
     @JsonSerialize(using = MySerializer.class)
     @JsonDeserialize(using = MyDeserializer.class)
     private LocalDateTime birthDate;
+
+    private BigDecimal amount;
 }
